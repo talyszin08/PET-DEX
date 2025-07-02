@@ -1,0 +1,635 @@
+{
+  "gatos": [
+    {
+      "raca": "Siamês",
+      "imagem": "images/siamês.jpg",
+      "comida_permitida": ["Ração", "Frango cozido", "Peixe sem espinha"],
+      "comida_proibida": ["Chocolate", "Cebola", "Alho"],
+      "cuidados": "Escovação semanal, limpeza de olhos.",
+      "exercicios": "Brincadeiras diárias com brinquedos.",
+      "tempo_de_vida": "15-20 anos",
+      "curiosidades": "São muito comunicativos."
+    },
+    {
+      "raca": "Persa",
+      "imagem": "images/persa.jpg",
+      "comida_permitida": ["Ração", "Peixe cozido", "Carne bovina"],
+      "comida_proibida": ["Leite", "Cebola", "Alho"],
+      "cuidados": "Escovação diária, limpeza dos olhos",
+      "exercicios": "Brincadeiras leves em casa.",
+      "tempo_de_vida": "12-17 anos",
+      "curiosidades": "Gosta de ambientes calmos."
+    },
+    {
+  "raca": "Gato Laranja Listrado",
+  "imagem": "images/gato-laranja-listrado.jpg",
+  "comida_permitida": ["Ração", "Frango cozido", "Peixe sem espinhas"],
+  "comida_proibida": ["Chocolate", "Uva", "Alho", "Cebola"],
+  "cuidados": "Escovação semanal para reduzir bolas de pelo e manter o brilho do pelo.",
+  "exercicios": "Brincadeiras com bolinhas, penas ou laser para estimular o instinto de caça.",
+  "tempo_de_vida": "13-18 anos",
+  "curiosidades": "A maioria dos gatos laranja é do sexo masculino; são conhecidos por serem sociáveis e afetuosos."
+    },
+    {
+      "raca": "Maine Coon",
+      "imagem": "images/maine-coon.jpg",
+      "comida_permitida": ["Ração", "Frango", "Salmão"],
+      "comida_proibida": ["Chocolate", "Alimentos gordurosos"],
+      "cuidados": "Escovação frequente devido ao pelo longo.",
+      "exercicios": "Brincadeiras e escaladas.",
+      "tempo_de_vida": "12-15 anos",
+      "curiosidades": "É uma das maiores raças de gatos."
+    },
+    {
+      "raca": "Bengal",
+      "imagem": "images/bengal.jpg",
+      "comida_permitida": ["Ração premium", "Carne crua"],
+      "comida_proibida": ["Doces", "Cafeína"],
+      "cuidados": "Precisa de estímulo mental e físico constante.",
+      "exercicios": "Brinquedos interativos e escaladas.",
+      "tempo_de_vida": "12-16 anos",
+      "curiosidades": "Tem pelagem que lembra um leopardo."
+    },
+    {
+      "raca": "Sphynx",
+      "imagem": "images/sphynx.jpeg",
+      "comida_permitida": ["Ração", "Carne magra cozida"],
+      "comida_proibida": ["Alimentos processados"],
+      "cuidados": "Banhos regulares para remover oleosidade.",
+      "exercicios": "Adora brincar e correr.",
+      "tempo_de_vida": "10-15 anos",
+      "curiosidades": "Não tem pelos e adora ficar no sol."
+    },
+    {
+      "raca": "Ragdoll",
+      "imagem": "images/ragdoll.jpg",
+      "comida_permitida": ["Ração", "Peixe cozido"],
+      "comida_proibida": ["Chocolate", "Uvas"],
+      "cuidados": "Escovação e atenção à saúde ocular.",
+      "exercicios": "Prefere brincadeiras leves.",
+      "tempo_de_vida": "12-17 anos",
+      "curiosidades": "Muito dócil e carinhoso."
+    },
+    {
+      "raca": "Angorá",
+      "imagem": "images/angora.jpg",
+      "comida_permitida": ["Ração", "Frango", "Peixe"],
+      "comida_proibida": ["Alho", "Cebola"],
+      "cuidados": "Escovação diária para evitar nós no pelo.",
+      "exercicios": "Brincadeiras diárias com interação.",
+      "tempo_de_vida": "12-18 anos",
+      "curiosidades": "É uma das raças mais antigas do mundo."
+    },
+    {
+      "raca": "Scottish Fold",
+      "imagem": "images/Scottish-Fold.png",
+      "comida_permitida": ["Ração", "Frango cozido", "Peixe"],
+      "comida_proibida": ["Cebola", "Alho", "Chocolate"],
+      "cuidados": "Limpeza das orelhas dobradas e escovação regular.",
+      "exercicios": "Brincadeiras leves e escaladas.",
+      "tempo_de_vida": "11-15 anos",
+      "curiosidades": "Conhecido pelas orelhas dobradas."
+    },
+    {
+      "raca": "Norueguês da Floresta",
+      "imagem": "images/noruegues-da-floresta.png",
+      "comida_permitida": ["Ração", "Peixe", "Carne crua"],
+      "comida_proibida": ["Doces", "Chocolate"],
+      "cuidados": "Escovação frequente por causa do pelo espesso.",
+      "exercicios": "Precisa de espaço para escalar.",
+      "tempo_de_vida": "14-16 anos",
+      "curiosidades": "Adapta-se bem ao frio."
+    },
+    {
+      "raca": "Abissínio",
+      "imagem": "images/abissinio.png",
+      "comida_permitida": ["Ração", "Frango", "Peixe"],
+      "comida_proibida": ["Café", "Álcool", "Doces"],
+      "cuidados": "Manutenção simples do pelo e interação constante.",
+      "exercicios": "Muito ativo, adora brinquedos e escaladas.",
+      "tempo_de_vida": "9-15 anos",
+      "curiosidades": "Considerado uma das raças mais antigas."
+    },
+    {
+      "raca": "British Shorthair",
+      "imagem": "images/british-shorthair.png",
+      "comida_permitida": ["Ração", "Carne magra", "Frango"],
+      "comida_proibida": ["Leite", "Alimentos condimentados"],
+      "cuidados": "Escovação semanal e check-ups regulares.",
+      "exercicios": "Brincadeiras curtas e descanso.",
+      "tempo_de_vida": "12-17 anos",
+      "curiosidades": "Famoso pelos olhos grandes e rosto arredondado."
+    },
+    {
+      "raca": "Bombay",
+      "imagem": "images/bombay.png",
+      "comida_permitida": ["Ração", "Frango cozido"],
+      "comida_proibida": ["Alho", "Cebola", "Doces"],
+      "cuidados": "Escovação regular e atenção aos olhos.",
+      "exercicios": "Brinquedos interativos e corridas.",
+      "tempo_de_vida": "12-16 anos",
+      "curiosidades": "Parece uma mini pantera."
+    },
+    {
+      "raca": "Oriental Shorthair",
+      "imagem": "images/oriental-shorthair.jpeg",
+      "comida_permitida": ["Ração", "Peixe", "Frutas seguras para gatos"],
+      "comida_proibida": ["Chocolate", "Alho", "Alimentos industrializados"],
+      "cuidados": "Interação social constante e escovação.",
+      "exercicios": "Alta energia, exige estímulos frequentes.",
+      "tempo_de_vida": "12-15 anos",
+      "curiosidades": "Muito vocal e sociável."
+    },
+    {
+      "raca": "Himalaio",
+      "imagem": "images/himalaio.jpg",
+      "comida_permitida": ["Ração", "Frango", "Peixe"],
+      "comida_proibida": ["Cebola", "Doces", "Álcool"],
+      "cuidados": "Escovação diária e limpeza ocular.",
+      "exercicios": "Brincadeiras leves e observação.",
+      "tempo_de_vida": "9-15 anos",
+      "curiosidades": "Cruza entre Persa e Siamês, aparência marcante."
+    }
+  ],
+  "cachorros": [
+    {
+      "raca": "Labrador",
+      "imagem": "images/labrador.jpeg",
+      "comida_permitida": ["Ração", "Cenoura", "Maçã"],
+      "comida_proibida": ["Chocolate", "Uva", "Alho"],
+      "cuidados": "Banho quinzenal, escovação diária.",
+      "exercicios": "Caminhadas diárias e brincadeiras.",
+      "tempo_de_vida": "10-14 anos",
+      "curiosidades": "Ótimos nadadores."
+    },
+    {
+      "raca": "Golden Retriever",
+      "imagem": "images/golden-retriever.jpg",
+      "comida_permitida": ["Ração", "Peito de frango cozido"],
+      "comida_proibida": ["Alimentos gordurosos"],
+      "cuidados": "Escovação regular e check-ups veterinários.",
+      "exercicios": "Corridas e natação.",
+      "tempo_de_vida": "10-12 anos",
+      "curiosidades": "Muito inteligente e leal."
+    },
+    {
+      "raca": "Pastor Alemão",
+      "imagem": "images/pastor-alemao.jpeg",
+      "comida_permitida": ["Ração", "Ovos cozidos"],
+      "comida_proibida": ["Chocolate", "Doces"],
+      "cuidados": "Adestramento e socialização desde filhote.",
+      "exercicios": "Treinos diários e longas caminhadas.",
+      "tempo_de_vida": "9-13 anos",
+      "curiosidades": "Usado como cão policial e de resgate."
+    },
+    {
+      "raca": "Poodle",
+      "imagem": "images/poodle.jpg",
+      "comida_permitida": ["Ração", "Batata-doce"],
+      "comida_proibida": ["Alimentos salgados"],
+      "cuidados": "Tosa regular e higiene dental.",
+      "exercicios": "Brincadeiras e corridas leves.",
+      "tempo_de_vida": "12-15 anos",
+      "curiosidades": "Muito inteligente e fácil de treinar."
+    },
+    {
+      "raca": "Bulldog Francês",
+      "imagem": "images/bulldog-frances.jpg",
+      "comida_permitida": ["Ração", "Peixe"],
+      "comida_proibida": ["Leite", "Chocolate"],
+      "cuidados": "Limpeza das rugas no rosto.",
+      "exercicios": "Caminhadas leves.",
+      "tempo_de_vida": "10-12 anos",
+      "curiosidades": "Afetuoso e ótimo para apartamentos."
+    },
+    {
+      "raca": "Husky Siberiano",
+      "imagem": "images/husky-siberiano.jpg",
+      "comida_permitida": ["Ração", "Carne magra"],
+      "comida_proibida": ["Alimentos gordurosos"],
+      "cuidados": "Necessita de espaço e clima frio.",
+      "exercicios": "Corridas e caminhadas longas.",
+      "tempo_de_vida": "12-15 anos",
+      "curiosidades": "Muito energético e independente."
+    },
+    {
+      "raca": "Chihuahua",
+      "imagem": "images/chihuahua.jpg",
+      "comida_permitida": ["Ração", "Peito de frango"],
+      "comida_proibida": ["Chocolate", "Doces"],
+      "cuidados": "Sensível ao frio, precisa de agasalhos no inverno.",
+      "exercicios": "Brincadeiras leves dentro de casa.",
+      "tempo_de_vida": "14-17 anos",
+      "curiosidades": "É a menor raça de cachorro do mundo."
+    },
+    {
+  "raca": "Pinscher",
+  "imagem": "images/pinscher.jpg",
+  "comida_permitida": ["Ração", "Frango cozido sem tempero"],
+  "comida_proibida": ["Chocolate", "Cebola", "Alho"],
+  "cuidados": "Propenso a problemas dentários, precisa de escovação regular e proteção contra o frio.",
+  "exercicios": "Caminhadas curtas e sessões de brincadeiras diárias.",
+  "tempo_de_vida": "12-16 anos",
+  "curiosidades": "Apesar do tamanho pequeno, tem personalidade corajosa e protetora; muitas vezes é confundido com o Doberman pela aparência similar."
+    },
+    {
+      "raca": "Beagle",
+      "imagem": "images/beagle.png",
+      "comida_permitida": ["Ração", "Frango", "Cenoura"],
+      "comida_proibida": ["Chocolate", "Cebola"],
+      "cuidados": "Higiene das orelhas e exercícios regulares.",
+      "exercicios": "Caminhadas e jogos de faro.",
+      "tempo_de_vida": "12-15 anos",
+      "curiosidades": "Ótimo faro e personalidade brincalhona."
+    },
+    {
+      "raca": "Dálmata",
+      "imagem": "images/filhote-dalmata.jpg",
+      "comida_permitida": ["Ração", "Carne magra", "Frutas"],
+      "comida_proibida": ["Alho", "Chocolate", "Uvas"],
+      "cuidados": "Exercício constante e escovação regular.",
+      "exercicios": "Corridas e brincadeiras ao ar livre.",
+      "tempo_de_vida": "10-13 anos",
+      "curiosidades": "Conhecido pelas manchas únicas."
+    },
+    {
+      "raca": "Shih Tzu",
+      "imagem": "images/shih-tzu.jpg",
+      "comida_permitida": ["Ração", "Frutas", "Arroz com carne"],
+      "comida_proibida": ["Doces", "Cebola", "Chocolate"],
+      "cuidados": "Tosa frequente e limpeza ocular.",
+      "exercicios": "Brincadeiras leves em casa.",
+      "tempo_de_vida": "10-16 anos",
+      "curiosidades": "Muito apegado aos donos."
+    },
+    {
+      "raca": "Cocker Spaniel",
+      "imagem": "images/cocker-spaniel.jpg",
+      "comida_permitida": ["Ração", "Frango", "Vegetais cozidos"],
+      "comida_proibida": ["Chocolate", "Uvas", "Alho"],
+      "cuidados": "Escovação regular e limpeza das orelhas.",
+      "exercicios": "Caminhadas e brincadeiras com bola.",
+      "tempo_de_vida": "12-15 anos",
+      "curiosidades": "Famoso pelas orelhas longas e pelagem macia."
+    },
+    {
+      "raca": "Border Collie",
+      "imagem": "images/border-collie2.jpg",
+      "comida_permitida": ["Ração", "Ovos", "Carne magra"],
+      "comida_proibida": ["Comida com gordura", "Chocolate"],
+      "cuidados": "Exige estímulo mental e físico constante.",
+      "exercicios": "Adora correr e buscar objetos.",
+      "tempo_de_vida": "12-15 anos",
+      "curiosidades": "Considerado o cão mais inteligente do mundo."
+    },
+    {
+      "raca": "Spitz Alemão",
+      "imagem": "images/spitz-alemao.jpg",
+      "comida_permitida": ["Ração", "Frutas", "Frango"],
+      "comida_proibida": ["Alimentos condimentados", "Chocolate"],
+      "cuidados": "Escovação diária para manter a pelagem.",
+      "exercicios": "Caminhadas curtas e brincadeiras.",
+      "tempo_de_vida": "12-16 anos",
+      "curiosidades": "Muito alerta e apegado ao tutor."
+    },
+    {
+      "raca": "Pug",
+      "imagem": "images/pug.jpg",
+      "comida_permitida": ["Ração", "Frutas", "Legumes"],
+      "comida_proibida": ["Chocolate", "Doces", "Uvas"],
+      "cuidados": "Atenção à respiração e controle de peso.",
+      "exercicios": "Caminhadas leves e brincadeiras curtas.",
+      "tempo_de_vida": "12-15 anos",
+      "curiosidades": "Rosto achatado e personalidade brincalhona."
+    }
+  ],
+  "peixes": [
+    {
+      "raca": "Betta",
+      "imagem": "images/betta.jpg",
+      "comida_permitida": ["Ração específica", "Larvas de mosquito"],
+      "comida_proibida": ["Pão", "Comida humana"],
+      "cuidados": "Troca de água semanal, aquário com temperatura adequada.",
+      "exercicios": "Movimentação livre no aquário.",
+      "tempo_de_vida": "3-5 anos",
+      "curiosidades": "Machos não podem viver juntos."
+    },
+    {
+      "raca": "Guppy",
+      "imagem": "images/guppy.jpg",
+      "comida_permitida": ["Ração", "Artêmia"],
+      "comida_proibida": ["Comida de mamíferos"],
+      "cuidados": "Aquário limpo, vegetação natural.",
+      "exercicios": "Nada constantemente pelo aquário.",
+      "tempo_de_vida": "2-3 anos",
+      "curiosidades": "Fácil de criar e reproduzir."
+    },
+    {
+      "raca": "Neon",
+      "imagem": "images/neon-art.png",
+      "comida_permitida": ["Ração específica", "Microvermes"],
+      "comida_proibida": ["Alimentos muito grandes"],
+      "cuidados": "Manutenção da qualidade da água.",
+      "exercicios": "Nada em cardume.",
+      "tempo_de_vida": "5-8 anos",
+      "curiosidades": "Brilha sob luz azul."
+    },
+    {
+      "raca": "Peixe Arco-Íris",
+      "imagem": "images/peixe-arco-iris.png",
+      "comida_permitida": ["Ração em flocos", "Artêmia", "Spirulina"],
+      "comida_proibida": ["Carne de mamíferos", "Alimentos com corantes"],
+      "cuidados": "Água limpa e bem oxigenada, aquário com plantas e espaço para nadar.",
+      "exercicios": "Nada ativamente em cardumes.",
+      "tempo_de_vida": "5-8 anos",
+      "curiosidades": "Suas cores ficam mais vibrantes sob luz natural e em água de qualidade."
+    },
+    {
+      "raca": "Discus",
+      "imagem": "images/discus.jpg",
+      "comida_permitida": ["Ração para discus", "Pequenos crustáceos"],
+      "comida_proibida": ["Alimentos muito duros"],
+      "cuidados": "Água aquecida e filtragem eficiente.",
+      "exercicios": "Nada calmamente pelo aquário.",
+      "tempo_de_vida": "10-15 anos",
+      "curiosidades": "Conhecido como o rei dos aquários."
+    },
+    {
+      "raca": "Acará-bandeira",
+      "imagem": "images/acara-bandeira.jpg",
+      "comida_permitida": ["Ração", "Alimentos vivos"],
+      "comida_proibida": ["Alimentos muito processados"],
+      "cuidados": "Aquário espaçoso com plantas.",
+      "exercicios": "Nada elegantemente em grupo.",
+      "tempo_de_vida": "8-12 anos",
+      "curiosidades": "Tem nadadeiras longas e elegantes."
+    },
+    {
+      "raca": "Molinésia",
+      "imagem": "images/molinesia-art.png",
+      "comida_permitida": ["Ração vegetal", "Alface", "Espinafre"],
+      "comida_proibida": ["Carnes", "Alimentos gordurosos"],
+      "cuidados": "Água ligeiramente salobra e quente.",
+      "exercicios": "Nada ativamente pelo aquário.",
+      "tempo_de_vida": "3-5 anos",
+      "curiosidades": "Pode ter várias cores vibrantes."
+    },
+    {
+      "raca": "Corydora",
+      "imagem": "images/corydora.jpg",
+      "comida_permitida": ["Ração de fundo", "Alimentos vivos"],
+      "comida_proibida": ["Alimentos flutuantes"],
+      "cuidados": "Solo do aquário limpo e sem objetos cortantes.",
+      "exercicios": "Explora o fundo do aquário.",
+      "tempo_de_vida": "5-10 anos",
+      "curiosidades": "Ajuda a limpar restos de comida."
+    },
+    {
+      "raca": "Oscar",
+      "imagem": "images/oscar.jpg",
+      "comida_permitida": ["Ração para ciclídeos", "Pequenos peixes"],
+      "comida_proibida": ["Comida humana", "Alimentos com tempero"],
+      "cuidados": "Aquário grande com boa filtragem.",
+      "exercicios": "Nada com movimentos amplos.",
+      "tempo_de_vida": "10-15 anos",
+      "curiosidades": "Pode reconhecer o dono."
+    },
+    {
+      "raca": "Tetra",
+      "imagem": "images/tetra.jpg",
+      "comida_permitida": ["Ração", "Alimentos vivos pequenos"],
+      "comida_proibida": ["Pão", "Alimentos processados"],
+      "cuidados": "Água limpa e levemente ácida.",
+      "exercicios": "Nada em grupo com agilidade.",
+      "tempo_de_vida": "5-8 anos",
+      "curiosidades": "Pequenos e ideais para aquários comunitários."
+    },
+    {
+      "raca": "Platy",
+      "imagem": "images/platy.jpg",
+      "comida_permitida": ["Ração vegetal", "Algas"],
+      "comida_proibida": ["Carne", "Comida industrializada"],
+      "cuidados": "Água com pH neutro e filtrada.",
+      "exercicios": "Nada de forma pacífica.",
+      "tempo_de_vida": "3-5 anos",
+      "curiosidades": "Muito colorido e fácil de cuidar."
+    },
+    {
+      "raca": "Peixe Palhaço",
+      "imagem": "images/peixe-palhaco.png",
+      "comida_permitida": ["Ração marinha", "Camarões pequenos"],
+      "comida_proibida": ["Carne vermelha", "Doces"],
+      "cuidados": "Água salgada e ambiente com anêmonas.",
+      "exercicios": "Movimentos ao redor da anêmona.",
+      "tempo_de_vida": "6-10 anos",
+      "curiosidades": "Famoso pelo filme “Procurando Nemo”."
+    },
+    {
+      "raca": "Barbo",
+      "imagem": "images/barbo-art.png",
+      "comida_permitida": ["Ração", "Insetos aquáticos"],
+      "comida_proibida": ["Comida oleosa", "Pão"],
+      "cuidados": "Aquário com vegetação e circulação de água.",
+      "exercicios": "Nada em grupos ativos.",
+      "tempo_de_vida": "5-7 anos",
+      "curiosidades": "Muito ativo e sociável."
+    },
+    {
+      "raca": "Kinguio",
+      "imagem": "images/kinguio-art.png",
+      "comida_permitida": ["Ração", "Ervilha cozida"],
+      "comida_proibida": ["Carne", "Alimentos gordurosos"],
+      "cuidados": "Água fria e boa oxigenação.",
+      "exercicios": "Nada lentamente pelo aquário.",
+      "tempo_de_vida": "10-15 anos",
+      "curiosidades": "Popularmente conhecido como peixe-dourado."
+    },
+    {
+      "raca": "Danio Zebra",
+      "imagem": "images/peixe-zebra-art.png",
+      "comida_permitida": ["Ração em flocos", "Pequenos insetos"],
+      "comida_proibida": ["Comida de mamíferos", "Pão"],
+      "cuidados": "Aquário com corrente leve e tampado.",
+      "exercicios": "Nada ativamente em grupo.",
+      "tempo_de_vida": "3-5 anos",
+      "curiosidades": "Muito resistente e ágil."
+    }
+  ],
+  "passaros": [
+    {
+      "raca": "Canário",
+      "imagem": "images/canario.jpeg",
+      "comida_permitida": ["Sementes", "Frutas"],
+      "comida_proibida": ["Abacate", "Chocolate"],
+      "cuidados": "Gaiola limpa e espaçosa.",
+      "exercicios": "Voos curtos dentro da gaiola.",
+      "tempo_de_vida": "10-15 anos",
+      "curiosidades": "Canto melodioso."
+    },
+    {
+      "raca": "Periquito",
+      "imagem": "images/periquito-passaro.jpeg",
+      "comida_permitida": ["Sementes", "Legumes"],
+      "comida_proibida": ["Chocolate", "Abacate"],
+      "cuidados": "Necessita de brinquedos para estímulo mental.",
+      "exercicios": "Voos diários fora da gaiola.",
+      "tempo_de_vida": "5-10 anos",
+      "curiosidades": "Pode aprender a imitar sons humanos."
+    },
+    {
+      "raca": "Papagaio",
+      "imagem": "images/papagaio.jpg",
+      "comida_permitida": ["Frutas", "Grãos"],
+      "comida_proibida": ["Cafeína", "Alho"],
+      "cuidados": "Necessita interação social.",
+      "exercicios": "Precisa voar e brincar diariamente.",
+      "tempo_de_vida": "30-50 anos",
+      "curiosidades": "Altamente inteligente e pode falar."
+    },
+    {
+      "raca": "Calopsita",
+      "imagem": "images/calopsita.jpg",
+      "comida_permitida": ["Sementes", "Milho", "Maçã"],
+      "comida_proibida": ["Abacate", "Café"],
+      "cuidados": "Necessita de carinho e atenção frequente.",
+      "exercicios": "Voos curtos dentro de casa.",
+      "tempo_de_vida": "15-20 anos",
+      "curiosidades": "Pode aprender a assobiar músicas."
+    },
+    {
+      "raca": "Mandarim",
+      "imagem": "images/mandarim.jpeg",
+      "comida_permitida": ["Sementes", "Verduras", "Ovos cozidos"],
+      "comida_proibida": ["Chocolate", "Alho"],
+      "cuidados": "Gaiola sempre limpa e com espaço para voar.",
+      "exercicios": "Voos dentro da gaiola.",
+      "tempo_de_vida": "5-7 anos",
+      "curiosidades": "Gosta de viver em casal."
+    },
+    {
+      "raca": "Diamante-de-Gould",
+      "imagem": "images/diamante-de-gould.jpg",
+      "comida_permitida": ["Sementes", "Frutas", "Verduras"],
+      "comida_proibida": ["Comidas salgadas", "Alimentos processados"],
+      "cuidados": "Ambiente calmo e temperatura controlada.",
+      "exercicios": "Voos dentro da gaiola.",
+      "tempo_de_vida": "8-10 anos",
+      "curiosidades": "Tem penas coloridas e vibrantes."
+    },
+    {
+      "raca": "Azulão",
+      "imagem": "images/azulao.jpg",
+      "comida_permitida": ["Sementes", "Insetos", "Frutas"],
+      "comida_proibida": ["Chocolate", "Alimentos industrializados"],
+      "cuidados": "Gaiola com espaço para voar e poleiros.",
+      "exercicios": "Voos diários na gaiola grande.",
+      "tempo_de_vida": "10-15 anos",
+      "curiosidades": "Tem um canto forte e marcante."
+    },
+    {
+      "raca": "Agapornis",
+      "imagem": "images/agapornis.jpg",
+      "comida_permitida": ["Frutas", "Sementes"],
+      "comida_proibida": ["Abacate", "Chocolate"],
+      "cuidados": "Necessita de companhia e brinquedos.",
+      "exercicios": "Voos curtos em ambiente seguro.",
+      "tempo_de_vida": "10-15 anos",
+      "curiosidades": "Conhecido como “inseparável” por viver em casal."
+    },
+    {
+      "raca": "Maritaca",
+      "imagem": "images/maritaca.jpg",
+      "comida_permitida": ["Frutas", "Sementes", "Legumes"],
+      "comida_proibida": ["Doces", "Café"],
+      "cuidados": "Interação social e espaço para voar.",
+      "exercicios": "Voos diários fora da gaiola.",
+      "tempo_de_vida": "15-20 anos",
+      "curiosidades": "Vocaliza alto e é muito sociável."
+    },
+    {
+      "raca": "Curió",
+      "imagem": "images/curio.png",
+      "comida_permitida": ["Sementes", "Insetos"],
+      "comida_proibida": ["Chocolate", "Alimentos gordurosos"],
+      "cuidados": "Gaiola limpa e ambiente calmo.",
+      "exercicios": "Voos leves na gaiola.",
+      "tempo_de_vida": "8-12 anos",
+      "curiosidades": "Canto valorizado em competições."
+    },
+    {
+      "raca": "Trinca-ferro",
+      "imagem": "images/trinca-ferro.png",
+      "comida_permitida": ["Frutas", "Insetos", "Sementes"],
+      "comida_proibida": ["Cebola", "Alho"],
+      "cuidados": "Gaiola grande e banho de sol.",
+      "exercicios": "Movimentação ativa na gaiola.",
+      "tempo_de_vida": "10-15 anos",
+      "curiosidades": "Canto forte e competitivo."
+    },
+    {
+      "raca": "Coleiro",
+      "imagem": "images/coleiro.png",
+      "comida_permitida": ["Sementes", "Frutas"],
+      "comida_proibida": ["Comida processada", "Chocolate"],
+      "cuidados": "Espaço para cantar e se movimentar.",
+      "exercicios": "Voos dentro da gaiola.",
+      "tempo_de_vida": "8-12 anos",
+      "curiosidades": "Muito comum no Brasil, excelente canto."
+    },
+    {
+      "raca": "Calafate",
+      "imagem": "images/calafate-art.png",
+      "comida_permitida": ["Sementes", "Verduras"],
+      "comida_proibida": ["Doces", "Abacate"],
+      "cuidados": "Gaiola arejada e com poleiros variados.",
+      "exercicios": "Movimento constante dentro da gaiola.",
+      "tempo_de_vida": "5-7 anos",
+      "curiosidades": "Colorido e muito sociável."
+    },
+    {
+      "raca": "Mainá",
+      "imagem": "images/maina.png",
+      "comida_permitida": ["Frutas", "Insetos"],
+      "comida_proibida": ["Sal", "Chocolate", "Café"],
+      "cuidados": "Necessita de espaço e estímulo vocal.",
+      "exercicios": "Voos livres em ambiente controlado.",
+      "tempo_de_vida": "12-20 anos",
+      "curiosidades": "Pode imitar a fala humana como o papagaio."
+    },
+    {
+  "raca": "Manon",
+  "imagem": "images/manon_ave.jpeg",
+  "comida_permitida": ["Sementes", "Farinha de ovos", "Verduras"],
+  "comida_proibida": ["Chocolate", "Abacate", "Alho"],
+  "cuidados": "Gaiola limpa, local tranquilo e de preferência com outros da mesma espécie.",
+  "exercicios": "Voos curtos dentro da gaiola.",
+  "tempo_de_vida": "5-8 anos",
+  "curiosidades": "Muito dócil e excelente como ave ama (pode chocar ovos de outras espécies)."
+    }
+  ],
+  "animais exóticos": [
+  {
+    "raca": "Porquinho-da-índia",
+    "imagem": "images/porquinho-da-india-art02.png",
+    "comida_permitida": ["Feno fresco", "Pimentão", "Pepino", "Ração específica"],
+    "comida_proibida": ["Chocolate", "Cebola", "Laticínios", "Batata crua"],
+    "cuidados": "Limpeza diária da gaiola, corte de unhas mensal, companhia de outro porquinho.",
+    "exercicios": "Corridas em cercado seguro diariamente, brinquedos para roer.",
+    "tempo_de_vida": "5-8 anos",
+    "curiosidades": "Produzem sons distintos chamados 'wheeking' quando felizes!"
+  },
+  {
+    "raca": "Dragão Barbudo",
+    "imagem": "images/lagarto-barbudo-art.png",
+    "comida_permitida": ["Grilos vivos", "Verduras escuras", "Morangos", "Insetos desidratados"],
+    "comida_proibida": ["Alface", "Luz UV insuficiente", "Insetos selvagens", "Abacate"],
+    "cuidados": "Terrário com controle térmico (zona quente a 35°C), banhos semanais, luz UV 12h/dia.",
+    "exercicios": "Exploração supervisionada fora do terrário, escalada em troncos.",
+    "tempo_de_vida": "8-12 anos",
+    "curiosidades": "Acenam com a pata dianteira para se comunicar!"
+  }
+]
+
+}
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html long="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+     <link rel="stylesheet" href="/static/styles/search.css">
+</head>
+<body>
+
+    <header style="display: flex; align-items: center; gap:80%; padding: 15px">
+        <img src="/static/images/Gato-logo.png" alt="Logo" style="height: 65px">
+        <a href="/">Voltar</a>
+    </header>
+
+    <div class="results-container">
+        <h2>Resultados da Busca</h2>
+
+        <div class="custom-alert">
+            <strong>Filtros aplicados:</strong>
+            <ul>
+                {% if filters.categoria %} <li>Categoria: {{ filters.categoria }}</li> {% endif %}
+                {% if filters.raca %} <li>Raça: {{ filters.raca }}</li> {% endif %}
+                {% if filters.comida_permitida %} <li><strong>Comidas:</strong> {{ filters.comida_permitida|join(', ') }}</li> {% endif %}
+                {% if filters.curiosidade_chave %} <li><strong>Curiosidade contém:</strong> "{{ filters.curiosidade_chave }}"</li> {% endif %}
+                {% if filters.exercicios_chave %} <li><strong>Exercícios contém:</strong> "{{ filters.exercicios_chave }}"</li> {% endif %}
+            </ul>
+        </div>
+
+        <div class="results-grid">
+            {% for pet in resultados %}
+            <div class="pet-card">
+                <div class="pet-card-content">
+                    <img src="{{ url_for('static', filename=pet.imagem) }}" alt="{{ pet.raca }}" class="pet-image">
+                    <h3 class="pet-category">{{ pet.categoria }}</h3>
+                    <h4 class="pet-title">{{ pet.raca }}</h4>
+                    
+                    <div class="pet-details">
+                        <p class="pet-info"><strong>Tempo de Vida:</strong> {{ pet.tempo_de_vida }}</p>
+                        <p class="pet-info"><strong>Comidas Permitidas:</strong> {{ pet.comida_permitida|join(', ') }}</p>
+                        <p class="pet-info"><strong>Comidas Proibidas:</strong> {{ pet.comida_proibida|join(', ') }}</p>
+                        <p class="pet-info"><strong>Curiosidade:</strong> {{ pet.curiosidades }}</p>
+                        <p class="pet-info"><strong>Cuidados:</strong> {{ pet.cuidados}}</p>
+                        <p class="pet-info"><strong>Exercícios:</strong> {{ pet.exercicios}}</p>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="warning-message">
+                Nenhum resultado encontrado com esses filtros!
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <footer>&copy; PET-DEX Para todos os Pets</footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões Recebidas </title>
+    <link rel="stylesheet" href="/static/styles/suggestions.css">
+</head>
+<body>
+    <h1>Sugestões Registradas  <a href="/">voltar</a> </h1>
+    {% for suggestion in suggestions %}
+    <div class="suggestion">
+        <p>{{ suggestion.su_dados }}</p>
+        <small><strong>Data: </strong>{{ suggestion.timestamp.astimezone(BR_TZ).strftime('%d/%m/%Y %H:%M') }}<br></small>
+    </div>
+    {% else %}
+    <li>Nenhuma sugestão registrada.</li>
+    <hr>
+    {% endfor %}
+</body>

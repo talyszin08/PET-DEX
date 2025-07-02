@@ -1,0 +1,277 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Century Gothic', sans-serif;
+      text-decoration: none;
+      list-style: none;
+
+    }
+
+
+    body {
+     
+      background: radial-gradient(rgb(163, 181, 241), rgb(46, 119, 161));
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    * {
+      scrollbar-width: 3px;
+      scrollbar-color: #c0dbddc0 #91abf133;
+
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      background:rgb(10, 112, 95);
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+      width: 100%;
+      margin: 0;
+      height: 96px;
+    }
+
+
+    header #logo {
+      margin-top: 3px;
+      margin: 3px;
+      border-radius: 11px;
+      font: 1em 'Century Gothic', sans-serif;
+      background: rgba(41, 53, 94, 0.377);
+      color: #f4ffb4;
+      align-items: center;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.3rem;
+      justify-content: center;
+
+    }
+    header a img {
+      background: #1f2247;
+      border: #cece99 1px solid;
+      border-radius: 5px;
+    }
+
+    header h2 {
+      justify-content: space-between;
+      margin: 5px;
+      padding: 23px;
+      border-radius: 6px;
+      font-size: 14pt;
+      background: rgba(161, 109, 190, 0.925);
+      color: #ebffec;
+     
+    }
+
+    footer {
+      display: flex;
+      flex: 1 1 100vw;
+      user-select: none;
+      border: 0;
+      background: rgba(15, 104, 126, 0.664);
+      display: flex;
+      width: 100%;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+      padding: 28px;
+      color: azure;
+    }
+    div {
+      
+      align-items: center;
+    }
+
+    div h1 {
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+      box-shadow: 5px 5px 15px rgba(55, 101, 158, 0.39);
+      background: rgba(103, 158, 202, 0.384);
+      margin: 5px;
+      color: rgb(236, 236, 133);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #f0e6d3;
+      font-weight: bold;
+    }
+
+    .custom-select {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #2c3e50;
+      border-radius: 4px;
+      background-color: #34495e;
+      color: #ecf0f1;
+    }
+
+    .custom-input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #2c3e50;
+      border-radius: 4px;
+      background-color: #ecf0f1;
+      color: #2c3e50;
+    }
+
+    .checkbox-group {
+      background-color: #90b3ff3d;
+      background-image: url(/static/images/tijela-5.png);
+      padding: 1rem;
+      color: #e6ff8d;
+      border-radius: 4px;
+       box-shadow: 5px 6px 5px rgba(14, 63, 78, 0.7);
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .checkbox-input {
+      margin-right: 0.5rem;
+    }
+
+    .custom-button {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #5f52c3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .custom-button:hover {
+      background-color: #cece99;
+      color: #2c3e50;
+    }
+
+     div a:hover {
+      background-color: #cece99;
+      color: #2c3e50;
+    }
+     div form button:hover {
+      background-color: #cece99;
+      color: #2c3e50;
+    }
+
+    @media (max-width: 768px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .container {
+        width: 95%;
+        padding: 0.5rem;
+      }
+    }
+    #image-container {
+      margin-left: 6px;
+      position: relative;
+      margin: 80px auto;
+      border: 3px solid rgb(30, 35, 63);
+      width: 350px;
+      height: 250px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 5px 6px 5px rgba(14, 63, 78, 0.7);
+
+    }
+
+    .image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+
+    }
+    textarea {
+      border-radius: 6px;
+      margin: 5px;
+      font-family: 'Franklin Gothic Medium', sans-serif;
+      font-size: 1rem;
+      color: darkgreen;
+      background: rgb(191, 236, 241);
+      width: 300px;
+    }
+    div form button {
+      padding: 6px;
+      border-radius: 4px;
+      margin: 4px;
+      border: none;
+      font-size: 1rem;
+      color: rgb(235, 247, 248);
+      background-color: rgba(159, 111, 190, 0.671);
+      box-shadow: 5px 6px 5px rgba(14, 63, 78, 0.7);
+    }
+    h2 {
+      margin: 10px;
+      color: #edd586;
+    }
+    form {
+      justify-items: center;
+    }
+    h3 {
+      margin: 6px;
+      color: whitesmoke;
+    }
+    div a {
+      padding: 6px;
+      border-radius: 11px;
+      background: rgb(153, 91, 211);
+      color: rgb(227, 231, 170);
+      box-shadow: 5px 6px 5px rgba(14, 63, 78, 0.7);
+    }
+
+    .checkbox-image {
+      height: 177px;
+      width: 453.5px;
+    }
+    .success { color: rgb(135, 45, 177); }
+
+    .alert {
+      color: rgb(255, 124, 84);
+    }
+   
+
+    .visible {
+      opacity: 1;
+    }
+
+    @media (max-width: 450px) {
+      body {
+        flex-direction: column;
+        min-height: 100vh;
+        display: block;
+        align-items: center;
+      }
+    }

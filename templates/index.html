@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet DEX</title>
+  <link rel="stylesheet" href="../static/styles/index.css">
+</head>
+
+<body>
+
+
+  <header>
+    <a id="logo">
+       <img src="/static/images/Gato-logo.png" alt="Logo" style="height: 65px">
+      PET-DEX
+    </a>
+    <h2>Cuidados Para Bichos</h2>
+  </header>
+
+  <main>
+    <div id="image-container">
+      <img src="/static/images/azulao.jpg" class="image visible"
+        alt="Image 1-passaro-pequeno-azul">
+      <img src="/static/images/discus.jpg" class="image"
+        alt="Image 2-peixe-discus">
+      <img src="/static/images/bulldog-frances.jpg" class="image"
+        alt="Image 3-pastor-alemao">
+      <img
+        src="/static/images/ragdoll.jpg"
+        class="image" alt="Image 4-gato-amarelo-listrado">
+      <img
+        src="/static/images/lagarto-barbudo-art.png"
+        class="image" alt="Image 5-lagarto-barbudo">
+    </div>
+  </main>
+  <script>
+    const images = document.querySelectorAll('.image');
+    let currentIndex = 0;
+
+    setInterval(() => {
+      images[currentIndex].classList.remove('visible');
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.add('visible');
+    }, 4000);
+  </script>
+
+  <div class="container">
+    <h1>Encontre seu Pet Ideal</h1>
+
+    <form action="/search" method="GET">
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label">Categoria</label>
+          <select name="categoria" class="custom-select">
+            <option value="">Todas</option>
+            {% for categoria in categorias %}
+            <option value="{{ categoria }}">{{ categoria.capitalize() }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Raça</label>
+          <input type="text" name="raca" class="custom-input" placeholder="Digite a raça...">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Comida Permitida:</label>
+          <div class="checkbox-group">
+            {% for comida in ['Ração', 'Frango', 'Peixe', 'Carne', 'Vegetais'] %}
+            <div class="checkbox-item">
+              <input class="checkbox-input" type="checkbox" name="comida_permitida" value="{{ comida }}"
+                id="comida{{ loop.index }}">
+              <label for="comida{{ loop.index }}">
+                {{ comida }}
+              </label>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Palavra-chave nas Curiosidades</label>
+              <input type="text" name="curiosidade" class="custom-input">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Palavra-chave nos exercícios</label>
+              <input type="text" name="exercicios" class="custom-input">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="custom-button">Buscar</button>
+    </form>
+  </div>
+
+  <h2> SUGESTÔES ? </h2>
+  <div class="suggestion-box">
+    <h3>Deixe sua sugestão <a href="http://127.0.0.1:5772/suggestions">Ver sugestões.>></a></h3>
+    <form action="{{ url_for('submit_suggestion') }}" method="post">
+        <textarea name="suggestion" rows="2" ></textarea>
+        <button type="submit">Enviar sugestão</button>
+    </form>
+   {% with messages = get_flashed_messages(with_categories=True) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      <div class="alert {{ category or 'alert-info' }}"><strong>{{ message }}</strong></div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+</div>
+</body>
+<footer>&copy; PET-DEX Para todos os Pets</footer>
+
+</html>
