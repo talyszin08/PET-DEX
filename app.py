@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from flask_sqlalchemy import SQLAlchemy
 import json
 import re
+import os
 
 app = Flask(__name__)
 app.secret_key = 'd4b35yt309ggtr'
@@ -142,7 +143,16 @@ def view_suggestions():
     return render_template('suggestions.html', suggestions=suggestions)
  
 # Cria o banco de dados 
+#if __name__ == '__main__':
+ #   with app.app_context():
+  #      db.create_all()
+   # app.run(debug=True, port=5772)
+
+
+
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-    app.run(debug=True, port=5772)
+    port = int(os.environ.get('PORT', 5772))
+    app.run(host='0.0.0.0', port=port)
