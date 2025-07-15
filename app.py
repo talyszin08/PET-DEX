@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
-from zoneinfo import ZoneInfo
 from datetime import datetime, timezone
 from flask_sqlalchemy import SQLAlchemy
+from datetime import timedelta
 import json
 import re
 import os
@@ -109,6 +109,14 @@ def submit_suggestion():
 def teste_imagem():
     return f'<img src="{url_for("static", filename="images/oriental-shorthair.jpeg")}">'
 
+@app.template_filter('data_hora')
+def data_hora(dt):
+    """
+    Recebe um datetime (UTC), subtrai 3 horas e retorna
+    no formato DD/MM/YYYY HH:MM:SS (sem informação de fuso).
+    """
+    return (dt - timedelta(hours=3)).strftime("%d/%m/%Y %H:%M:%S")
+
 @app.route('/search')
 def search():
     sanitized_args = {
@@ -132,9 +140,6 @@ def search():
     resultados = pet_filter.filter_pets(**filters)
     return render_template('search.html', resultados=resultados, filters=filters)
 
-@app.context_processor
-def inject_timezone():
-    return {'BR_TZ': ZoneInfo("America/Sao_Paulo")}
 
 @app.route('/suggestions')
 def view_suggestions():

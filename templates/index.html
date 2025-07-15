@@ -14,7 +14,7 @@
   <header>
     <a id="logo">
        <img src="/static/images/Gato-logo.png" alt="Logo" style="height: 65px">
-      PET-DEX
+    PET-DEX
     </a>
     <h2>Cuidados Para Bichos</h2>
   </header>
@@ -96,13 +96,13 @@
         </div>
       </div>
 
-      <button type="submit" class="custom-button">Buscar</button>
+      <button type="submit" class="custom-button"><strong>Buscar</strong></button>
     </form>
   </div>
 
   <h2> SUGESTÔES ? </h2>
   <div class="suggestion-box">
-    <h3>Deixe sua sugestão <a href="http://127.0.0.1:5772/suggestions">Ver sugestões.>></a></h3>
+    <h3>Deixe sua sugestão <a href="http://127.0.0.1:5772/suggestions">Ver sugestões></a></h3>
     <form action="{{ url_for('submit_suggestion') }}" method="post">
         <textarea name="suggestion" rows="2" ></textarea>
         <button type="submit">Enviar sugestão</button>
@@ -116,6 +116,6 @@
 {% endwith %}
 </div>
 </body>
-<footer>&copy; PET-DEX Para todos os Pets</footer>
+<footer><strong>&copy; PET-DEX Para todos os Pets</strong></footer>
 
 </html>

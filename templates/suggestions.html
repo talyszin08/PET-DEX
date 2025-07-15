@@ -11,7 +11,10 @@
     {% for suggestion in suggestions %}
     <div class="suggestion">
         <p>{{ suggestion.su_dados }}</p>
-        <small><strong>Data: </strong>{{ suggestion.timestamp.astimezone(BR_TZ).strftime('%d/%m/%Y %H:%M') }}<br></small>
+      <small>
+       <strong>Data e Hora:</strong>
+       {{ suggestion.timestamp|data_hora }}
+       </small>
     </div>
     {% else %}
     <li>Nenhuma sugestão registrada.</li>
